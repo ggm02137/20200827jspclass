@@ -1,8 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
    pageEncoding="UTF-8"%>
-<%@ page import="java.util.Random" %> 
-<%@ page import="java.util.Date" %> 
-<%@ page import="java.text.SimpleDateFormat" %>
+
 
 <!doctype html>
 <html lang="en">
@@ -20,7 +18,7 @@
       
    <style>
           .view-box{
-            margin-top:10px;
+            margin-top:100px;
           }
           .test {
              float:left !important;
@@ -35,26 +33,27 @@
         <div class="view-box"></div>
         <div class="card">
           <div class="card-header">
-               애국가
+               아이티스터디 (with 비전공자분들♡)
           </div>
-          
+         
           
           <div class="card">
           <div class="card-body">
-            <p class="card-text">홍길동</p>
-            <p class="card-text">동해물과 백두산이 마르고 닳도록<br>하느님이</p>
+           <h5 class="card-title">20200827 목요일 지금은 오후 4시 37분</h5>
+            <p class="card-text"></p>
+            <p class="card-text">오늘 발키리 이벤예고떴다 의상 개미침....역시 아첨하지않고 굴복하지 않는 유닛...우리를 굴복시키네..누나가 이벤 열심히 달릴게!!!</p>
           </div>
           <div class="card-footer">
             <a href="/board/list.jsp" class="btn btn-primary">목록</a>
-            <a href="/board/edit.jsp" class="btn btn-warning">수정</a>
+            
             <div class="float-right">
+            <a href="/board/edit.jsp" class="btn btn-warning">수정</a>
               <button type="button" class="btn btn-danger"  data-target="#exampleModal" data-toggle="modal">삭제</button>
             </div>
           </div>
         </div>
       </div>
-      <!-- 댓글 -->
-      <div class="card">
+      <div class="card" style="margin-top:40px">
           <div class="card-body">
             <div>
             <form>
@@ -70,6 +69,7 @@
             </div>
             </div>
             </div>
+      
       
       <form id="deleteForm" method="post" action="/board/form.jsp">
          <input type="hidden" name="board_id" />
